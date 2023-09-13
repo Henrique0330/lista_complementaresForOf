@@ -9,10 +9,17 @@
 
     //Entrada
 
+    let nomes = ["Hilário", "Rafaela", "José", "Bárbara", "Fábio", "Júlia"];
 
     //Processamento
 
+    let nomesCorrigidos = [];
+    for (const nome of nomes) {
+        nomesCorrigidos.push(nome.replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u"))
+    }
 
     //Saída
+
+    alert(`Essa são as letras sem acentos: ${nomesCorrigidos.join(", ")}`)
 
 </script>
