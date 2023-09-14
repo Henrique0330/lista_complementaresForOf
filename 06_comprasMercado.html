@@ -8,9 +8,19 @@
 
     //Entrada
 
-
+    let lista = ["A", "E", 2, 4.8, "CINQUENTA", "Araquari", 80, 10, 3.2];
+    let numero = [];
+    let soma = 0;
     //Processamento
 
+    for (const numeros of lista) {
+        if (!isNaN(numeros)) {
+            numero.push(numeros)
+            soma += numeros
+
+        }
+    }
+    alert(`${soma}`)
 
     //Saída
 
